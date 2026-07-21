@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    padding: 0;
+    border: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(175, 34, 34);
+    color: #151515;
+    line-height: 2.0;
+}
+
+/* Header */
+header {
+    background-color: #c9880f;
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+header h1 {
+    font-size: 42px;
+}
+nav {
+    background-color: rgb(156, 67, 67);
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 15px;
+}
+nav ul li a {
+    color: rgb(178, 176, 176);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    background-color: #5da387;
+    color: white;
+}
+nav ul li a.active {
+    background-color: #5da387;
+    color: white;
+}
+/* main */ 
+main {
+    width: 85%;
+    margin:auto;
+}
+/* section */
+section {
+    background-color: #8c8271;
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 4px 8px rgb(236, 103, 103);
+}
+section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-bottom: 3px solid #5da387;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+#about {
+    text-align: center;
+}
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ca1fec;
+    margin: 20px;
+}
+#about p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: auto;
+}
+/* skills */
+dl {
+   margin-top: 20px;
+}
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #151716;
+    font-size: 18px;
+}
+dd {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+/* projects */
+article {
+    margin-top: 20px;
+    background-color: #b0d1d1;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #000000;
+    transition: 0.3s;
+}
+article:hover {
+    transform: translateY(5px);
+}
+article h3 {
+    margin-bottom: 10px;
+    color: #151716;
+}
+article a {
+    color: #6969ef;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact Form */
+
+#contact form {
+    max-width: 700px;
+    margin: auto;
+}
+
+#contact label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+#contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#contact button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: rgb(5, 148, 184);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact button:hover {
+    background-color: rgb(3, 181, 163);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(246, 61, 10);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 20px;
+        margin: 25px 0;
+    }
+
+    #about img {
+        width: 180px;
+        height: 180px;
+    }
+
+    article {
+        padding: 15px;
+    }
+}
